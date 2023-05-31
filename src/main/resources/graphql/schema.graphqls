@@ -1,0 +1,439 @@
+type ScrumProject{
+    id: ID!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type ScrumProcess{
+    id: ID!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+input ScrumProjectInput{
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input ScrumProcessInput{
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input ProductBacklogDefinitionInput{
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input SprintInput{
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input CeremonyInput{
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input ScrumDevelopmentTaskInput{
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input PersonInput{
+  email:String!
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input teammembershipInput{
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input ScrumTeamInput{
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input UserStoryInput{
+  importance:String!
+  effort:String!
+  createdDate:String!
+  updateDate:String!
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input AcceptanceCriterionInput{
+  createdtDate:String!
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input ProductBacklogInput{
+  createdtDate:String!
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input SprintBacklogInput{
+  createdtDate:String!
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input DeliverableInput{
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input SprintDeliverableInput{
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+input ScrumProjectDeliverableInput{
+  name:String!
+  description:String!
+  startDate:String!
+  endDate:String!
+  url:String!
+  externalId:String!
+  internalId:String!
+}
+
+type ProductBacklogDefinition{
+    id: ID!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type Sprint{
+    id: ID!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type Ceremony{
+    id: ID!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type ScrumDevelopmentTask{
+    id: ID!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+type Person{
+    id: ID!
+    email:String!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type teammembership{
+    id: ID!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type ScrumTeam{
+    id: ID!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type UserStory{
+    id: ID!
+    importance:String!
+    effort:String!
+    createdDate:String!
+    updateDate:String!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type AcceptanceCriterion{
+    id: ID!
+    createdtDate:String!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type ProductBacklog{
+    id: ID!
+    createdtDate:String!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type SprintBacklog{
+    id: ID!
+    createdtDate:String!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type Deliverable{
+    id: ID!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type SprintDeliverable{
+    id: ID!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+type ScrumProjectDeliverable{
+    id: ID!
+    name:String!
+    description:String!
+    startDate:String!
+    endDate:String!
+    url:String!
+    externalId:String!
+    internalId:String!
+}
+
+
+
+type Query{
+  findAllScrumProjects:[ScrumProject]
+  findAllScrumProcesss:[ScrumProcess]
+  findAllProductBacklogDefinitions:[ProductBacklogDefinition]
+  findAllSprints:[Sprint]
+  findAllCeremonys:[Ceremony]
+  findAllScrumDevelopmentTasks:[ScrumDevelopmentTask]
+  findAllPersons:[Person]
+  findAllteammemberships:[teammembership]
+  findAllScrumTeams:[ScrumTeam]
+  findAllUserStorys:[UserStory]
+  findAllAcceptanceCriterions:[AcceptanceCriterion]
+  findAllProductBacklogs:[ProductBacklog]
+  findAllSprintBacklogs:[SprintBacklog]
+  findAllDeliverables:[Deliverable]
+  findAllSprintDeliverables:[SprintDeliverable]
+  findAllScrumProjectDeliverables:[ScrumProjectDeliverable]
+  findByIDScrumProject (id: ID!):ScrumProject
+  findByIDScrumProcess (id: ID!):ScrumProcess
+  findByIDProductBacklogDefinition (id: ID!):ProductBacklogDefinition
+  findByIDSprint (id: ID!):Sprint
+  findByIDCeremony (id: ID!):Ceremony
+  findByIDScrumDevelopmentTask (id: ID!):ScrumDevelopmentTask
+  findByIDPerson (id: ID!):Person
+  findByIDteammembership (id: ID!):teammembership
+  findByIDScrumTeam (id: ID!):ScrumTeam
+  findByIDUserStory (id: ID!):UserStory
+  findByIDAcceptanceCriterion (id: ID!):AcceptanceCriterion
+  findByIDProductBacklog (id: ID!):ProductBacklog
+  findByIDSprintBacklog (id: ID!):SprintBacklog
+  findByIDDeliverable (id: ID!):Deliverable
+  findByIDSprintDeliverable (id: ID!):SprintDeliverable
+  findByIDScrumProjectDeliverable (id: ID!):ScrumProjectDeliverable
+}
+
+type Mutation{
+  createScrumProject(input: ScrumProjectInput):ScrumProject
+  createScrumProcess(input: ScrumProcessInput):ScrumProcess
+  createProductBacklogDefinition(input: ProductBacklogDefinitionInput):ProductBacklogDefinition
+  createSprint(input: SprintInput):Sprint
+  createCeremony(input: CeremonyInput):Ceremony
+  createScrumDevelopmentTask(input: ScrumDevelopmentTaskInput):ScrumDevelopmentTask
+  createPerson(input: PersonInput):Person
+  createteammembership(input: teammembershipInput):teammembership
+  createScrumTeam(input: ScrumTeamInput):ScrumTeam
+  createUserStory(input: UserStoryInput):UserStory
+  createAcceptanceCriterion(input: AcceptanceCriterionInput):AcceptanceCriterion
+  createProductBacklog(input: ProductBacklogInput):ProductBacklog
+  createSprintBacklog(input: SprintBacklogInput):SprintBacklog
+  createDeliverable(input: DeliverableInput):Deliverable
+  createSprintDeliverable(input: SprintDeliverableInput):SprintDeliverable
+  createScrumProjectDeliverable(input: ScrumProjectDeliverableInput):ScrumProjectDeliverable
+  deleteScrumProject (id: ID!):ScrumProject
+  deleteScrumProcess (id: ID!):ScrumProcess
+  deleteProductBacklogDefinition (id: ID!):ProductBacklogDefinition
+  deleteSprint (id: ID!):Sprint
+  deleteCeremony (id: ID!):Ceremony
+  deleteScrumDevelopmentTask (id: ID!):ScrumDevelopmentTask
+  deletePerson (id: ID!):Person
+  deleteteammembership (id: ID!):teammembership
+  deleteScrumTeam (id: ID!):ScrumTeam
+  deleteUserStory (id: ID!):UserStory
+  deleteAcceptanceCriterion (id: ID!):AcceptanceCriterion
+  deleteProductBacklog (id: ID!):ProductBacklog
+  deleteSprintBacklog (id: ID!):SprintBacklog
+  deleteDeliverable (id: ID!):Deliverable
+  deleteSprintDeliverable (id: ID!):SprintDeliverable
+  deleteScrumProjectDeliverable (id: ID!):ScrumProjectDeliverable
+  updateScrumProject (id: ID!, input: ScrumProjectInput):ScrumProject
+  updateScrumProcess (id: ID!, input: ScrumProcessInput):ScrumProcess
+  updateProductBacklogDefinition (id: ID!, input: ProductBacklogDefinitionInput):ProductBacklogDefinition
+  updateSprint (id: ID!, input: SprintInput):Sprint
+  updateCeremony (id: ID!, input: CeremonyInput):Ceremony
+  updateScrumDevelopmentTask (id: ID!, input: ScrumDevelopmentTaskInput):ScrumDevelopmentTask
+  updatePerson (id: ID!, input: PersonInput):Person
+  updateteammembership (id: ID!, input: teammembershipInput):teammembership
+  updateScrumTeam (id: ID!, input: ScrumTeamInput):ScrumTeam
+  updateUserStory (id: ID!, input: UserStoryInput):UserStory
+  updateAcceptanceCriterion (id: ID!, input: AcceptanceCriterionInput):AcceptanceCriterion
+  updateProductBacklog (id: ID!, input: ProductBacklogInput):ProductBacklog
+  updateSprintBacklog (id: ID!, input: SprintBacklogInput):SprintBacklog
+  updateDeliverable (id: ID!, input: DeliverableInput):Deliverable
+  updateSprintDeliverable (id: ID!, input: SprintDeliverableInput):SprintDeliverable
+  updateScrumProjectDeliverable (id: ID!, input: ScrumProjectDeliverableInput):ScrumProjectDeliverable
+  
+}
